@@ -440,7 +440,6 @@
         <button class="e-bebek-add-to-card">Sepete Ekle</button>
       `;
       
-      // Add event listener for favorite button
       const favIcon = card.querySelector(".e-bebek-fav-icon");
       favIcon.addEventListener("click", (event) => toggleFavorite(product.id, event));
       
@@ -556,9 +555,5 @@
     });
   };
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
+  init();
 })();
